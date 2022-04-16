@@ -15,7 +15,6 @@ width: 100%;
 max-width: 90%;
 margin: 0 auto;
 padding: 2em 0;
-// background-color: #fafafa;
 
 display: flex;
 align-items: center;
@@ -70,7 +69,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
             font-size: 1rem;
             font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
             cursor: pointer;
 
             &:hover{
@@ -90,9 +89,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
 
 @media (max-width: 768px) {
     display: block;
-    width: 100%;
     background-color: rgb(0 44 29);
-    height: auto;
     color: #fff;
     position: absolute;
     top: ${props => props.open ? '0' : '-100%'};
@@ -100,6 +97,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
     right: 0;
     padding: 1em;
     z-index: 5;
+    transition: all 0.5s ease-in;
 }
 `
 
