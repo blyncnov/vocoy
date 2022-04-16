@@ -45,8 +45,8 @@ const Navigation: React.FC = () => {
 
           <Mobile onClick={handleClick} style={{ cursor: "pointer" }}>
             {!isOpen ?
-              <RiBarChartHorizontalLine style={{ fontSize: "1.5em", cursor: "pointer", color: "black" }} />
-              : <FaTimes style={{ fontSize: "1.5em", cursor: "pointer", color: "white"  }} />}
+              <RiBarChartHorizontalLine style={{ fontSize: "1.7em", cursor: "pointer", color: "black" }} />
+              : <FaTimes style={{ fontSize: "1.7em", cursor: "pointer", color: "white"  }} />}
           </Mobile>
         </NavigationWrapperMaximum>
         </NavigationWrapper>

@@ -93,7 +93,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
     width: 100%;
     background-color: rgb(0 44 29);
     height: auto;
-    cursor: pointer;color: #fff;
+    color: #fff;
     position: absolute;
     top: ${props => props.open ? '0' : '-100%'};
     left: 0;
