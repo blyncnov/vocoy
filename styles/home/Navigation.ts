@@ -21,7 +21,7 @@ align-items: center;
 justify-content: space-between;
 
 @media (max-width: 768px) {
-   padding: 1em 0; 
+   padding: 1.2em 0; 
 }
 
 `
@@ -97,8 +97,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
         @media (max-width: 768px) {
             padding: 1em 0;
             text-align: start;
-            color: white
-            border-bottom: .1px solid rgb(0 0 0 / 13%);
+            border-bottom: .1px solid rgb(239 235 249 / 50%);
 
         &:hover{
             color: #6533E9;
