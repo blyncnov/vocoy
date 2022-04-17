@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
  interface ListNavOpen {
-  open: boolean,
+     open: boolean,
 }
 
 export const NavigationWrapper = styled.div`
@@ -110,7 +110,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
     background-color: #fff;
     color: #333;
     position: absolute;
-    top: ${props => props.open ? '0' : '-100%'};
+    top: ${({open}) => open ? '0' : '-100%'};
     left: 0;
     right: 0;
     padding: 1em;
