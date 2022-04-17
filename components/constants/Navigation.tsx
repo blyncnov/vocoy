@@ -27,7 +27,6 @@ const Navigation: React.FC = () => {
               <h1 style={{ color: "#6534E9" }}>
                  <span>Blo</span>
                 <FaBlog style={{ fontSize: "1.5em" }} />
-    
                 </h1>
             </div>
             <div className="navbar__left--items">
@@ -79,7 +78,6 @@ const Navigation: React.FC = () => {
                 </Link>
             </ul>
           </NavigationRight>
-
           <Mobile onClick={handleClick} style={{ cursor: "pointer" }}>
             {!isOpen ?
               <RiBarChartHorizontalLine style={{ fontSize: "1.7em", cursor: "pointer", color: "#6533E9" , fontWeight: "900"}} />

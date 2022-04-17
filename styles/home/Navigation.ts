@@ -14,11 +14,16 @@ export const NavigationWrapperMaximum = styled.div`
 width: 100%;
 max-width: 90%;
 margin: 0 auto;
-padding: 2em 0;
+padding: 1.5em 0;
 
 display: flex;
 align-items: center;
 justify-content: space-between;
+
+@media (max-width: 768px) {
+   padding: 1em 0; 
+}
+
 `
 
 export const NavigationLeft = styled.div`
