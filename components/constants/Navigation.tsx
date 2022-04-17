@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import Link from "next/link"
 
-import {FaTimes} from 'react-icons/fa';
+import {FaTimes, FaBlog} from 'react-icons/fa';
 import {RiBarChartHorizontalLine} from 'react-icons/ri';
 
 import {
@@ -23,29 +24,64 @@ const Navigation: React.FC = () => {
         <NavigationWrapperMaximum>
           <NavigationLeft >
             <div className="navbar__left--logo">
-              <h1>TechWire</h1>
+              <h1 style={{ color: "#6534E9" }}>
+                <FaBlog style={{ fontSize: "1.5em" }} />
+                <span>Vocoy</span>
+                </h1>
             </div>
             <div className="navbar__left--items">
               <NavigatorSide open={isOpen}>
-                <li>Technology</li>
-                <li>Gadget</li>
-                <li>Software</li>
-                <li>Apps</li>
-                <li>Games</li>
-                <li>Podcasts</li>
+                <Link href="/">
+                  <a>
+                    <li>Technology</li>
+                </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <li>Gadget</li>
+                </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <li>Software</li>
+                </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <li>Apps</li>
+                </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <li>Games</li>
+                </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <li>Podcasts</li>
+                </a>
+                </Link>
               </NavigatorSide>
             </div>
           </NavigationLeft>
           <NavigationRight >
             <ul>
-              <li>Subscribe</li>
-              <li>Sign In</li>
+                <Link href="/">
+                  <a>
+                    <li>Subscribe</li>
+                </a>
+              </Link>
+                <Link href="/">
+                  <a>
+                    <li>Sign In</li>
+                </a>
+                </Link>
             </ul>
           </NavigationRight>
 
           <Mobile onClick={handleClick} style={{ cursor: "pointer" }}>
             {!isOpen ?
-              <RiBarChartHorizontalLine style={{ fontSize: "1.7em", cursor: "pointer", color: "black" }} />
+              <RiBarChartHorizontalLine style={{ fontSize: "1.7em", cursor: "pointer", color: "#6533E9" }} />
               : <FaTimes style={{ fontSize: "1.7em", cursor: "pointer", color: "white"  }} />}
           </Mobile>
         </NavigationWrapperMaximum>

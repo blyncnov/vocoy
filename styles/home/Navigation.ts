@@ -24,12 +24,21 @@ justify-content: space-between;
 export const NavigationLeft = styled.div`
 display: flex;
 align-items: center;
-gap: 2em;
+gap: 5em;
 
 .navbar__left--logo h1{
     cursor: pointer;
     font-size: 2em;
     z-index: 2;
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+
+span{
+    color: black;
+    font-family: sf-pro-display, sans-serif;
+}
+
 }
 
 
@@ -47,7 +56,12 @@ justify-content: space-between;
         li{
             font-size: 1rem;
             font-weight: 500;
+            text-transform: uppercase;
             cursor: pointer;
+
+            a{
+                text-transform: uppercase;
+            }
 
             &:hover{
                 color: purple;
@@ -65,20 +79,25 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
         display: flex;
         gap: 1em;
 
+        a{
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
         li{
             font-size: 1rem;
-            font-weight: 500;
             cursor: pointer;
             transition: all 0.5s ease-in-out;
             cursor: pointer;
 
             &:hover{
-                color: #333;
+                color: #6534E9;
             }
 
         @media (max-width: 768px) {
             padding: 1em 0;
             text-align: start;
+            color: white
             border-bottom: .1px solid rgb(255 255 255 / 3%);
 
         &:hover{
@@ -87,9 +106,9 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     display: block;
-    background-color: rgb(0 44 29);
+    background-color: #6533E9;
     color: #fff;
     position: absolute;
     top: ${props => props.open ? '0' : '-100%'};
