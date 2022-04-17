@@ -10,21 +10,11 @@ interface iState {
 }
 
 const Hero: React.FC = () => {
-
-  let [state, setState] = useState(
-     [
-    {
-      age: 1,
-      name: "Boluwatife",
-      level: "Master"
-    }
-  ]
-  )
+  let [state, setState] = useState()
 
   return (
     <HeaderWrapper>
       <HeroWrapperMaximum>
-{/* {state[0].age} */}
         {/* <ShowcasePost />
           <ShowcaseSideBar /> */}
         </HeroWrapperMaximum>
