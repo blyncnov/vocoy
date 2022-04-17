@@ -15,9 +15,3 @@ body {
 a{
   color: inherit;
 }
-
-@media (max-width: 768px){
-  a{
-color: white;
-}
-}

@@ -93,18 +93,18 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
             padding: 1em 0;
             text-align: start;
             color: white
-            border-bottom: .1px solid rgb(255 255 255 / 3%);
+            border-bottom: .1px solid rgb(0 0 0 / 13%);
 
         &:hover{
-            color: #D7FDF1;
+            color: #6533E9;
         }
 }
 }
 
 @media (max-width: 900px) {
     display: block;
-    background-color: #6533E9;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     position: absolute;
     top: ${props => props.open ? '0' : '-100%'};
     left: 0;
@@ -112,6 +112,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
     padding: 1em;
     z-index: 5;
     transition: all 0.5s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 `
 
