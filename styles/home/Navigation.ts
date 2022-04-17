@@ -31,13 +31,8 @@ gap: 5em;
     font-size: 2em;
     z-index: 2;
     display: flex;
-    gap: 0.2em;
+    // gap: 0.1em;
     align-items: center;
-
-span{
-    color: black;
-    font-family: sf-pro-display, sans-serif;
-}
 
 }
 
@@ -81,7 +76,7 @@ export const NavigatorSide = styled.ul<ListNavOpen>`
 
         a{
             text-transform: uppercase;
-            font-weight: 600;
+             font-weight: 600;
         }
 
         li{

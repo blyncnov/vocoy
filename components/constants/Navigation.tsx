@@ -25,8 +25,9 @@ const Navigation: React.FC = () => {
           <NavigationLeft >
             <div className="navbar__left--logo">
               <h1 style={{ color: "#6534E9" }}>
+                 <span>Blo</span>
                 <FaBlog style={{ fontSize: "1.5em" }} />
-                <span>Vocoy</span>
+    
                 </h1>
             </div>
             <div className="navbar__left--items">
